@@ -1,4 +1,4 @@
-function nambe(a) {
-  return -a;
+function removeChar(str) {
+  return str.slice(1, -1);
 }
-console.log(nambe(210));
+console.log(removeChar("Вадим"));
