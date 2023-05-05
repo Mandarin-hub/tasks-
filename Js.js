@@ -1,7 +1,4 @@
-function removeChar(str) {
-  return str.slice(1, -1);
+function myName() {
+  console.log("Vadim");
 }
-console.log(removeChar("Вадим"));
-
-a = 10;
-console.log(a);
+myName();
