@@ -9,6 +9,48 @@
     <title>Vadim resume</title>
   </head>
   <body>
+    <h1>Написать</h1>
+    <form>
+      <div>
+        <label for="Ник">Имя</label>
+        <input type="text" id="Ник" value="вадим" />
+      </div>
+      <div>
+        <label for="number">Возраст</label>
+        <input type="number" id="number" min="18" max="35" />
+      </div>
+      <div>
+        <label for="пол">ваш пол</label>
+        <select id="пол">
+          <option value="">Мужчина</option>
+          <option value="">Женщина</option>
+          <option value="" selected>Оно</option>
+        </select>
+      </div>
+      <div>
+        <label for="Email">Email</label>
+        <input type="email" id="Email" placeholder="введите email" />
+      </div>
+      <div>
+        <label for="password">Пароль</label>
+        <input type="password" id="password" />
+      </div>
+      <div>
+        <label for="лет">Лет It</label>
+        <input type="range" id="лет" min="1" max="11" step="2" />
+      </div>
+      <div>
+        <label for="date">Начало</label>
+        <input type="date" id="date" />
+      </div>
+      <div>
+        <label for="message">Сообщение</label>
+        <br />
+        <textarea id="message" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit">отправить</button>
+    </form>
+
     <h1>Vadim Gaponenko</h1>
     <p>
       <a href="https://vk.com/playermaximalki" target="_blank"> профиль вк </a>
@@ -20,7 +62,7 @@
     <br />
     <img src="HoTH3Vx2E4U.jpg" width="250" alt="фото" />
 
-    <hr color="ellowy" size="10" />
+    <hr color="blue" size="10" />
     <h4>my resume</h4>
     <ul>
       <li>
@@ -42,7 +84,15 @@
         eligendi.
       </li>
     </ul>
+    <form>
+      <div>
+        <label for="прочитал">Прочитал</label>
+        <input type="radio" id="прочитал" name="текст" />да
+        <input type="radio" id="прочитал" name="текст" />нет
+      </div>
+    </form>
     <hr />
+
     <h4><me>Мои хобби</me></h4>
     <ol>
       <li>спорт</li>
