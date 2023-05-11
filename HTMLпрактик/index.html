@@ -7,6 +7,12 @@
     <meta name="keywords" content="Vadim,cv,resume" />
     <meta name="description" content="это рюзюме Вадима Гапоненко" />
     <title>Vadim resume</title>
+    <style>
+      .card {
+        background-color: #eee;
+      }
+    </style>
+    <link rel="stylesheet" href="01.selectors.css" />
   </head>
   <body>
     <h1>Написать</h1>
@@ -64,31 +70,36 @@
 
     <hr color="blue" size="10" />
     <h4>my resume</h4>
-    <ul>
-      <li>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong>
-          Consequuntur molestiae quo impedit maxime est deserunt ipsam id magni.
-          Magnam, iusto.</strong
-        >
-      </li>
-      <ol>
+
+    <header id="anketa" class="card">
+      <ul>
         <li>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
-          sit!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong
+            style="border: 1px solid red"
+          >
+            Consequuntur molestiae quo impedit maxime est deserunt ipsam id
+            magni. Magnam, iusto.</strong
+          >
         </li>
-      </ol>
-      <li>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, alias?
-        Optio, fugiat laborum quas sint tempore commodi doloremque officia et
-        illo quo suscipit quasi fuga, ullam perferendis magnam reprehenderit
-        eligendi.
-      </li>
-    </ul>
+        <ol>
+          <li>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+            sit!
+          </li>
+        </ol>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, alias?
+          Optio, fugiat laborum quas sint tempore commodi doloremque officia et
+          illo quo suscipit quasi fuga, ullam perferendis magnam reprehenderit
+          eligendi.
+        </li>
+      </ul>
+    </header>
     <form>
-      <div>
-        <label for="прочитал">Прочитал</label>
-        <input type="radio" id="прочитал" name="текст" />да
-        <input type="radio" id="прочитал" name="текст" />нет
+      <div id="опрос">
+        <label for="прочит">Прочитал</label>
+        <input type="radio" id="прочит" name="текст" />да
+        <input type="radio" id="прочит" name="текст" />нет
       </div>
     </form>
     <hr />
