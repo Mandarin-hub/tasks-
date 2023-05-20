@@ -7,124 +7,147 @@
     <meta name="keywords" content="Vadim,cv,resume" />
     <meta name="description" content="это рюзюме Вадима Гапоненко" />
     <title>Vadim resume</title>
-    <style>
-      .card {
-        background-color: #eee;
-      }
-    </style>
+
     <link rel="stylesheet" href="01.selectors.css" />
+    <link rel="stylesheet" href="border.css" />
+    <link rel="stylesheet" href="button&links.css" />
   </head>
   <body>
-    <h1>Написать</h1>
-    <form>
-      <div>
-        <label for="Ник">Имя</label>
-        <input type="text" id="Ник" value="вадим" />
-      </div>
-      <div>
-        <label for="number">Возраст</label>
-        <input type="number" id="number" min="18" max="35" />
-      </div>
-      <div>
-        <label for="пол">ваш пол</label>
-        <select id="пол">
-          <option value="">Мужчина</option>
-          <option value="">Женщина</option>
-          <option value="" selected>Оно</option>
-        </select>
-      </div>
-      <div>
-        <label for="Email">Email</label>
-        <input type="email" id="Email" placeholder="введите email" />
-      </div>
-      <div>
-        <label for="password">Пароль</label>
-        <input type="password" id="password" />
-      </div>
-      <div>
-        <label for="лет">Лет It</label>
-        <input type="range" id="лет" min="1" max="11" step="2" />
-      </div>
-      <div>
-        <label for="date">Начало</label>
-        <input type="date" id="date" />
-      </div>
-      <div>
-        <label for="message">Сообщение</label>
-        <br />
-        <textarea id="message" cols="30" rows="10"></textarea>
-      </div>
-      <button type="submit">отправить</button>
-    </form>
+    <div class="container">
+      <h1>Написать</h1>
+      <form>
+        <div>
+          <label for="Ник">Имя</label>
+          <input type="text" id="Ник" value="вадим" />
+        </div>
+        <div>
+          <label for="number">Возраст</label>
+          <input type="number" id="number" min="18" max="35" />
+        </div>
+        <div>
+          <label for="пол">ваш пол</label>
+          <select id="пол">
+            <option value="">Мужчина</option>
+            <option value="">Женщина</option>
+            <option value="" selected>Оно</option>
+          </select>
+        </div>
+        <div>
+          <label for="Email">Email</label>
+          <input type="email" id="Email" placeholder="введите email" />
+        </div>
+        <div>
+          <label for="password">Пароль</label>
+          <input type="password" id="password" />
+        </div>
+        <div>
+          <label for="лет">Лет It</label>
+          <input type="range" id="лет" min="1" max="11" step="2" />
+        </div>
+        <div>
+          <label for="date">Начало</label>
+          <input type="date" id="date" />
+        </div>
+        <div>
+          <label for="message">Сообщение</label>
+          <br />
+          <textarea id="message" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn">отправить</button>
+      </form>
 
-    <h1>Vadim Gaponenko</h1>
-    <p>
-      <a href="https://vk.com/playermaximalki" target="_blank"> профиль вк </a>
-      <strong>|</strong>
-      <a href="https://vk.com/lanna0302" target="_blank">профиль жены</a>
-    </p>
-    <br />
-    <h3>Фото</h3>
-    <br />
-    <img src="HoTH3Vx2E4U.jpg" width="250" alt="фото" />
-
-    <hr color="blue" size="10" />
-    <h4>my resume</h4>
-
-    <header id="anketa" class="card">
-      <ul>
-        <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong
-            style="border: 1px solid red"
+      <h1>Vadim Gaponenko</h1>
+      <div class="card bg-red">
+        <p>
+          <a href="https://vk.com/playermaximalki" class="btn" target="_blank">
+            профиль вк
+          </a>
+          <strong>|</strong>
+          <a href="https://vk.com/lanna0302" class="btn" target="_blank"
+            >профиль жены</a
           >
-            Consequuntur molestiae quo impedit maxime est deserunt ipsam id
-            magni. Magnam, iusto.</strong
-          >
-        </li>
-        <ol>
+        </p>
+      </div>
+      <br />
+      <h3>Фото</h3>
+      <br />
+      <img src="HoTH3Vx2E4U.jpg" class="avatar" alt="фото" />
+
+      <hr color="blue" size="10" />
+      <h4>my resume</h4>
+
+      <header id="anketa" class="card bg-yellow">
+        <ul>
           <li>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
-            sit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong
+              style="border: 1px solid red"
+            >
+              Consequuntur molestiae quo impedit maxime est deserunt ipsam id
+              magni. Magnam, iusto.</strong
+            >
           </li>
-        </ol>
-        <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, alias?
-          Optio, fugiat laborum quas sint tempore commodi doloremque officia et
-          illo quo suscipit quasi fuga, ullam perferendis magnam reprehenderit
-          eligendi.
-        </li>
-      </ul>
-    </header>
-    <form>
-      <div id="опрос">
-        <label for="прочит">Прочитал</label>
-        <input type="radio" id="прочит" name="текст" />да
-        <input type="radio" id="прочит" name="текст" />нет
-      </div>
-    </form>
-    <hr />
+          <ol>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+              sit!
+            </li>
+          </ol>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+            alias? Optio, fugiat laborum quas sint tempore commodi doloremque
+            officia et illo quo suscipit quasi fuga, ullam perferendis magnam
+            reprehenderit eligendi.
+          </li>
+        </ul>
+      </header>
+      <form>
+        <div id="опрос" class="card bg-green">
+          <label for="прочит">Прочитал</label>
+          <input type="radio" id="прочит" name="текст" />да
+          <input type="radio" id="прочит" name="текст" />нет
+        </div>
+      </form>
+      <hr />
 
-    <h4><me>Мои хобби</me></h4>
-    <ol>
-      <li>спорт</li>
-      <li>игры</li>
-      <li>учеба</li>
-    </ol>
-    <h4>выучл</h4>
-    <br />
-    <table width="300">
-      <tr>
-        <thead>
-          <th>Html</th>
-          <th>CSS</th>
-          <th>JS</th>
-        </thead>
-        <tbody>
-          <td>Result.School</td>
-          <td>Result.School</td>
-          <td>Богдан</td>
-        </tbody>
-      </tr>
-    </table>
+      <h4><me>Мои хобби</me></h4>
+      <ol>
+        <li>спорт</li>
+        <li>игры</li>
+        <li>учеба</li>
+      </ol>
+      <h4>выучл</h4>
+      <br />
+      <table width="300">
+        <tr>
+          <thead>
+            <th>Html</th>
+            <th>CSS</th>
+            <th>JS</th>
+          </thead>
+          <tbody>
+            <td>Result.School</td>
+            <td>Result.School</td>
+            <td>Богдан</td>
+          </tbody>
+        </tr>
+      </table>
+      <div class="work">
+        <h2>Works</h2>
+        <p>
+          <a href="#" class="btn">посмотреть работы</a>
+        </p>
+        <p>
+          <button class="btn">изброное</button>
+        </p>
+      </div>
+      <h2>border</h2>
+      <p class="border-1">Lorem ipsum dolor sit amet.</p>
+
+      <p class="border-2">Lorem ipsum dolor sit amet.</p>
+
+      <p class="border-3">Lorem ipsum dolor sit amet.</p>
+
+      <div class="cercle"></div>
+    </div>
   </body>
 </html>
